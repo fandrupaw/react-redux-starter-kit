@@ -1,0 +1,24 @@
+.header-component {
+    position: relative;
+    border-bottom: #d0cfcf 1px solid;
+
+    .menu-container {
+        .header-link {
+            display: inline-block;
+            vertical-align: middle;
+            padding: .5rem 1rem;
+
+            &.active {
+                background: #d6d6d6;
+            }
+        }
+    }
+
+    .user-info-container {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: .5rem 1rem;
+    }
+}
