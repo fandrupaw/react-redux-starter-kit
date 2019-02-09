@@ -11,5 +11,12 @@ export const llama = createReducer(initialState, {
             ...state,
             clicks: state.clicks + 1,
         }
+    },
+
+    [LLAMA.RESET](state) {
+        return {
+            ...state,
+            clicks: 0,
+        }
     }
 });
