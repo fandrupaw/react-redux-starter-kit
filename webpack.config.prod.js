@@ -43,7 +43,8 @@ module.exports = {
             actions: path.resolve(__dirname, 'actions'),
             service: path.resolve(__dirname, 'service'),
             utils: path.resolve(__dirname, 'utils'),
-            model: path.resolve(__dirname, 'model')
+            static: path.resolve(__dirname, 'static'),
+            views: path.resolve(__dirname, 'views'),
         }
     },
     output: {
@@ -55,8 +56,6 @@ module.exports = {
         new webpack.DefinePlugin(GLOBALS),
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
@@ -71,8 +70,8 @@ module.exports = {
                 to: path.resolve(__dirname, 'dist/index.html')
             },
             {
-                from: path.resolve(__dirname, 'static/icon2.png'),
-                to: path.resolve(__dirname, 'dist/icon2.png')
+                from: path.resolve(__dirname, 'static/icon.png'),
+                to: path.resolve(__dirname, 'dist/icon.png')
             }
         ])
     ],

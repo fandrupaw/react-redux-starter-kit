@@ -1,7 +1,8 @@
 {
-  "name": "poker-game",
+  "name": "react-redux-starter-kit",
   "version": "0.0.1",
   "main": "index.js",
+  "author": "Paweł Andruszków",
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
     "build-front": "webpack --config ./webpack.config.prod.js --mode production",
